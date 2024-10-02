@@ -1,0 +1,130 @@
+/* Apply box-sizing to all elements for better control over sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #78C850; /* Set background color to Bulbasaur Green */
+    font-family: Arial, Helvetica, sans-serif; /* Default font family */
+}
+
+/* Styles for the main heading */
+h1 {
+    margin: 50px; /* Margin around the heading */
+    font-size: 50px; /* Font size for the heading */
+    color: #ffffff; /* White color for the text */
+    text-align: center; /* Center align the text */
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Container styles for cards */
+.container {
+    gap: 20px; /* Space between items */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    background-color: #ffffff; /* White background for the container */
+    margin: 50px; /* Margin around the container */
+}
+
+/* Card styles */
+.card {
+    width: 200px; /* Fixed width for each card */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for card */
+    background-color: #F08030; /* Charizard Orange for card background */
+    margin-top: 50px; /* Top margin for spacing */
+    margin-bottom: 50px; /* Bottom margin for spacing */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Styles for images within cards */
+.card img {
+    padding: 30px; /* Space around the image */
+    margin: 10px; /* Margin around the image */
+    width: auto; /* Auto width to maintain aspect ratio */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    max-height: 100%; /* Prevent overflow */
+    background-color: antiquewhite; /* Light background color for images */
+}
+
+/* Info section padding */
+.info {
+    padding-bottom: 10px; /* Space at the bottom of the info section */
+}
+
+/* Paragraph styles within the info section */
+.info p {
+    text-align: center; /* Center align text */
+    color: white; /* White text color */
+    line-height: 0.5; /* Line height for spacing */
+    padding: 0; /* No padding */
+    margin-top: 0; /* No top margin */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Styles for code elements */
+.code {
+    font-size: 12px; /* Font size for code */
+    font-weight: 300; /* Light font weight */
+    text-emphasis: none; /* No text emphasis */
+}
+
+/* Styles for Pokémon name */
+.name {
+    font-weight: 600; /* Bold font weight for names */
+}
+
+/* Styles for Pokémon type labels */
+.type {
+    text-shadow: 0px 1px 2px #00000075; /* Shadow for type labels */
+    backdrop-filter: blur(10px); /* Blur effect behind the text */
+    border-radius: 10px; /* Rounded corners for labels */
+    padding: 2px 8px; /* Padding for labels */
+    font-weight: 700; /* Bold font weight */
+    color: #ffffff; /* White text color */
+}
+
+/* Background for type labels */
+.type span {
+    background-color: #ffffff4f; /* Semi-transparent white background */
+}
+
+/* Search bar container styles */
+.search-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align search bar */
+    margin: 20px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for the search bar */
+.search-bar {
+    width: 50%; /* Set width for search bar */
+    padding: 10px; /* Padding inside the search bar */
+    border-radius: 25px; /* Rounded corners */
+    border: 2px solid #ccc; /* Light gray border */
+    font-size: 16px; /* Font size for input text */
+    outline: none; /* Remove outline on focus */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+    background-color: #f5f5f5; /* Light background color for input */
+}
+
+/* Focus styles for the search bar */
+.search-bar:focus {
+    border-color: #ffcc00; /* Border color on focus */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Soft yellow glow on focus */
+}
+
+/* Placeholder styles for the search bar */
+.search-bar::placeholder {
+    color: #999; /* Gray color for placeholder text */
+}

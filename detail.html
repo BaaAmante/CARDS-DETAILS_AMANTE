@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Detail</title>
+    <link rel="stylesheet" href="detail.css" />
+</head>
+<body>
+    <!-- Main container for the Pokémon details -->
+    <main class="detail-main main">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-wrap">
+                    <!-- Back button to return to the home page -->
+                    <a href="index.html" class="back-btn-wrap">
+                        <img src="icon/left-arrow.png" alt="back to home" class="back-btn" id="back-btn" />
+                    </a>
+                    <div class="name-wrap">
+                        <h1 class="name"></h1> <!-- Placeholder for the Pokémon's name -->
+                    </div>
+                </div>
+                <div class="pokemon-id-wrap">
+                    <p class="body2-fonts"></p> <!-- Placeholder for the Pokémon's ID -->
+                </div>
+            </div>
+        </header>
+
+        <div class="featured-img">
+            <div class="detail-img-wrapper">
+                <img src="" alt="Pokémon image" /> <!-- Placeholder for Pokémon image -->
+            </div>
+        </div>
+
+        <div class="detail-card-detail-wrapper">
+            <div class="power-wrapper">
+                <p class="body3-fonts type grass"></p> <!-- Placeholder for Pokémon type -->
+                <p class="body3-fonts type poison"></p> <!-- Placeholder for Pokémon type -->
+            </div>
+
+            <p class="body2-fonts about-text">About</p> <!-- Section title for about the Pokémon -->
+
+            <div class="pokemon-detail-wrapper">
+                <div class="pokemon-detail-wrap">
+                    <div class="pokemon-detail">
+                        <img src="icon/weight.png" alt="weight" /> <!-- Icon for weight -->
+                        <p class="body3-fonts weight"></p> <!-- Placeholder for Pokémon weight -->
+                    </div>
+                    <p class="caption-fonts">Weight</p> <!-- Label for weight -->
+                </div>
+                <div class="pokemon-detail-wrap">
+                    <div class="pokemon-detail">
+                        <img src="icon/height.png" alt="height" class="straighten" /> <!-- Icon for height -->
+                        <p class="body3-fonts height"></p> <!-- Placeholder for Pokémon height -->
+                    </div>
+                    <p class="caption-fonts">Height</p> <!-- Label for height -->
+                </div>
+                <div class="pokemon-detail-wrap">
+                    <div class="pokemon-detail move"></div> <!-- Placeholder for ability -->
+                    <p class="caption-fonts">Ability</p> <!-- Label for ability -->
+                </div>
+            </div>
+
+            <p class="body3-fonts pokemon-description"></p> <!-- Placeholder for Pokémon description -->
+
+            <p class="body2-fonts about-text">Base Stats</p> <!-- Section title for base stats -->
+
+            <div class="stats-wrapper">
+                <!-- Base stats section -->
+                <div class="stats-wrap" data-stat="HP">
+                    <p class="body3-fonts stats">HP</p> <!-- Label for HP stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for HP value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for HP -->
+                    </div>
+                </div>
+                <div class="stats-wrap" data-stat="Attack">
+                    <p class="body3-fonts stats">ATK</p> <!-- Label for Attack stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for Attack value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for Attack -->
+                    </div>
+                </div>
+                <div class="stats-wrap" data-stat="Defense">
+                    <p class="body3-fonts stats">DEF</p> <!-- Label for Defense stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for Defense value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for Defense -->
+                    </div>
+                </div>
+                <div class="stats-wrap" data-stat="Sp-Attack">
+                    <p class="body3-fonts stats">S.ATK</p> <!-- Label for Special Attack stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for Special Attack value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for Special Attack -->
+                    </div>
+                </div>
+                <div class="stats-wrap" data-stat="Sp-Defense">
+                    <p class="body3-fonts stats">S.DEF</p> <!-- Label for Special Defense stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for Special Defense value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for Special Defense -->
+                    </div>
+                </div>
+                <div class="stats-wrap" data-stat="Speed">
+                    <p class="body3-fonts stats">SPEED</p> <!-- Label for Speed stat -->
+                    <p class="body3-fonts stat-value"></p> <!-- Placeholder for Speed value -->
+                    <div class="stat-bar">
+                        <div class="stat-fill"></div> <!-- Progress bar fill for Speed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="detail.js"></script> <!-- Link to JavaScript file for functionality -->
+</body>
+</html>
